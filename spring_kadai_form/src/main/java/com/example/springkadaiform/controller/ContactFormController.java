@@ -22,7 +22,7 @@ public class ContactFormController {
 			model.addAttribute("contactForm", new ContactForm()); // モデルに追加
 		}
 		
-		return "confirmView";
+		return "contactFormView";
 	}
 	
 	//確認画面に遷移
@@ -42,7 +42,7 @@ public class ContactFormController {
 			
 		}else {
 	        redirectAttributes.addFlashAttribute("contactForm", form); // 確認画面にデータを渡す
-	        return "contactFormView"; 
+	        return "confirmView"; 
 		}
 	}
 }
